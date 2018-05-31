@@ -64,9 +64,55 @@ body:first-child{
 }
 
 .fas{
+    margin: 15px;
+    font-size: 2em;
     cursor: pointer;
+}
+
+.fas.fa-bars{
+    display: none;
+}
+
+.fas.fa-times{
+    display: none;
+    position: absolute;
+    top: 0;
 }
 
 .coin .name{
     font-weight: 700;
+}
+
+@media only screen and (max-width: 900px){
+    #header {
+        font-size: 0.8em;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #coin_container .coin{
+        flex-basis: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .fas.fa-bars{
+        display: inline-block;
+    }
+
+    #header {        
+        display: none;
+        height: 50vh;
+    }
+
+    #header #sort{
+        display: flex;
+        flex-direction: column;  
+    }
+
+    #header select, #header button, #header input[name="filter"]{
+        border-radius: 0px;     
+    }
 }

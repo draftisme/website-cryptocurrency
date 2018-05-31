@@ -112,6 +112,24 @@ const sortAsc = (arr, btnType, sortType) => {
     renderArr(arr);
 }
 
+const showMenu = () => {
+    const header = document.getElementById("header");    
+    const showIcon = document.getElementsByClassName("fa-bars")[0];
+    const hideIcon = document.getElementsByClassName("fa-times")[0];
+    showIcon.style.display = "none";
+    hideIcon.style.display = "inline-block";
+    header.style.display = "flex";
+}
+
+const hideMenu = () => {
+    const header = document.getElementById("header");
+    const showIcon = document.getElementsByClassName("fa-bars")[0];
+    const hideIcon = document.getElementsByClassName("fa-times")[0];
+    showIcon.style.display = "inline-block";
+    hideIcon.style.display = "none";
+    header.style.display = "none";
+}
+
 // const request = async () => {
 //     const response = await fetch(API_URL);
 //     const data = await response.json();
