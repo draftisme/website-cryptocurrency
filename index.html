@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cryptocurrency Info</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- <script src="./assets/data/crytocurrency.js"></script> -->
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="./assets/images/logo.png" alt="Logo">
+        </div>
+        <div id="sort">
+            <label>sort by: </label>
+            <select>
+                <option value="ascending">ascending</option>
+                <option value="descending">descending</option>
+            </select>
+            <button onClick="sortFunc(event)">name</button>
+            <button onClick="sortFunc(event)">price</button>
+            <button onClick="sortFunc(event)">rank</button>
+        </div>
+        <div>
+            <i class="fas fa-search" onclick="filterFunc()"></i>
+            <input type="text" name="filter" id="filterInput" placeholder="search find name..." />
+        </div>        
+    </div>
+    <div id="container">
+        <div id="countResult">
+            
+        </div>
+        <div id="coin_container">
+
+        </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
